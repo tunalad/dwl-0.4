@@ -5,20 +5,19 @@ dwm for wayland. Trying to achieve the same as with my dwm fork
 ## Requirements
 
 -   set `$TERMINAL` environment variable
--   monospaced font (`ttf-dejavu`)
--   `libx11`
--   `libxft`
--   `libxinerama`
+-   wlroots
+-   xorg-xwayland
+-   wayland-protocols (make)
 
 ## Installaion
 
 ```
-git clone https://github.com/tunalad/dwm.git
-cd dwm
+git clone https://github.com/tunalad/dwl.git
+cd dwl
 sudo make clean install
 ```
 
-## Patches applied
+## Applied Patches
 
 -   [alwayscenter](https://github.com/djpohly/dwl/wiki/alwayscenter)
 -   [attachbottom](https://github.com/djpohly/dwl/wiki/attachbottom)
@@ -34,7 +33,7 @@ sudo make clean install
 -   [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
 -   [alwaysontop](https://dwm.suckless.org/patches/alwaysontop/)
 -   [autostart](https://dwm.suckless.org/patches/autostart/)
-    - there is an autostart patch for dwl, but it's like the [cool_autostart](https://dwm.suckless.org/patches/cool_autostart/)
+    - there is an autostart patch for dwl ([here](https://github.com/djpohly/dwl/wiki/autostart)), but it's like the [cool_autostart](https://dwm.suckless.org/patches/cool_autostart/)
 -   [fixborders](https://dwm.suckless.org/patches/alpha/)
     -   not required, dwl by itself does the transparency
 -   [focusonnetactive](https://dwm.suckless.org/patches/focusonnetactive/)
