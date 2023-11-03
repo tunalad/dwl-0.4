@@ -117,7 +117,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "alacritty", NULL };
+#define TERMINAL_ENVVAR "TERMINAL"
 static const char *menucmd[] = { "dmenu_run", NULL };
 
 #include "shiftview.c"

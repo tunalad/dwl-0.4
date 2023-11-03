@@ -26,6 +26,7 @@ sudo make clean install
 -   [movestack](https://github.com/djpohly/dwl/wiki/movestack)
 -   [pertag](https://github.com/djpohly/dwl/wiki/pertag)
 -   [shiftview](https://github.com/djpohly/dwl/wiki/shiftview)
+-   [terminal_envvar](https://gist.github.com/tunalad/2bba81acee2dbebdaa0275fcd4f82493) (environmentvars port)
 -   [uselessgaps](https://github.com/djpohly/dwl/wiki/uselessgaps) (fullgaps alternative)
 
 ## Missing Patches
@@ -34,7 +35,6 @@ sudo make clean install
 -   [alwaysontop](https://dwm.suckless.org/patches/alwaysontop/)
 -   [autostart](https://dwm.suckless.org/patches/autostart/)
     - there is an autostart patch for dwl, but it's like the [cool_autostart](https://dwm.suckless.org/patches/cool_autostart/)
--   [environmentvars](https://dwm.suckless.org/patches/environmentvars/)
 -   [fixborders](https://dwm.suckless.org/patches/alpha/)
     -   not required, dwl by itself does the transparency
 -   [focusonnetactive](https://dwm.suckless.org/patches/focusonnetactive/)

@@ -367,6 +367,7 @@ static struct wl_list keyboards;
 static unsigned int cursor_mode;
 static Client *grabc;
 static int grabcx, grabcy; /* client-relative */
+static char *termcmd[]  = { NULL, NULL };
 
 static struct wlr_output_layout *output_layout;
 static struct wlr_box sgeom;
@@ -2219,6 +2220,12 @@ setup(void)
 		sigaction(sig[i], &sa, NULL);
 
 	wlr_log_init(log_level, NULL);
+
+	/* load environment variable(s) */
+	termcmd[0] = getenv(TERMINAL_ENVVAR);
+	if (termcmd[0] == NULL) {
+		die("couldn't load " TERMINAL_ENVVAR " environment variable.");
+	}
 
 	/* The Wayland display is managed by libwayland. It handles accepting
 	 * clients from the Unix socket, manging Wayland globals, and so on. */
