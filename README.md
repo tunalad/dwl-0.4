@@ -23,9 +23,9 @@ sudo make clean install
 -   [alwayscenter](https://github.com/djpohly/dwl/wiki/alwayscenter)
 -   [attachbottom](https://github.com/djpohly/dwl/wiki/attachbottom)
 -   ¤ [autostart](https://github.com/djpohly/dwl/wiki/autostart)
--   ¤ [moveresizekb](https://github.com/djpohly/dwl/wiki/moveresizekb) (moveresize)
--   ¤ [movestack](https://github.com/djpohly/dwl/wiki/movestack)
--   ¤ [pertag](https://github.com/djpohly/dwl/wiki/pertag)
+-   [moveresizekb](https://github.com/djpohly/dwl/wiki/moveresizekb) (moveresize)
+-   [movestack](https://github.com/djpohly/dwl/wiki/movestack)
+-   [pertag](https://github.com/djpohly/dwl/wiki/pertag)
 -   ¤ [shiftview](https://github.com/djpohly/dwl/wiki/shiftview)
 -   ¤ [vanitygaps](https://github.com/djpohly/dwl/wiki/vanitygaps) (fullgaps alternative)
 

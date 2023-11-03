@@ -7,3 +7,5 @@ config.h
 README.md
 *.rej
 *.diff
+*.orig
+patches
