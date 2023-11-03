@@ -22,17 +22,18 @@ sudo make clean install
 
 -   [alwayscenter](https://github.com/djpohly/dwl/wiki/alwayscenter)
 -   [attachbottom](https://github.com/djpohly/dwl/wiki/attachbottom)
--   ¤ [autostart](https://github.com/djpohly/dwl/wiki/autostart)
 -   [moveresizekb](https://github.com/djpohly/dwl/wiki/moveresizekb) (moveresize)
 -   [movestack](https://github.com/djpohly/dwl/wiki/movestack)
 -   [pertag](https://github.com/djpohly/dwl/wiki/pertag)
--   ¤ [shiftview](https://github.com/djpohly/dwl/wiki/shiftview)
--   ¤ [vanitygaps](https://github.com/djpohly/dwl/wiki/vanitygaps) (fullgaps alternative)
+-   [shiftview](https://github.com/djpohly/dwl/wiki/shiftview)
+-   [uselessgaps](https://github.com/djpohly/dwl/wiki/uselessgaps) (fullgaps alternative)
 
 ## Missing Patches
 
 -   [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
 -   [alwaysontop](https://dwm.suckless.org/patches/alwaysontop/)
+-   [autostart](https://dwm.suckless.org/patches/autostart/)
+    - there is an autostart patch for dwl, but it's like the [cool_autostart](https://dwm.suckless.org/patches/cool_autostart/)
 -   [environmentvars](https://dwm.suckless.org/patches/environmentvars/)
 -   [fixborders](https://dwm.suckless.org/patches/alpha/)
     -   not required, dwl by itself does the transparency
