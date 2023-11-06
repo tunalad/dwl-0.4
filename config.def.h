@@ -14,6 +14,7 @@ static const float focuscolor[]            = COLOR(0x005577ff);
 static const float urgentcolor[]           = COLOR(0xff0000ff);
 /* To conform the xdg-protocol, set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1, 0.1, 0.1, 1.0}; /* You can also use glsl colors */
+static const int mrkb_px                   = 40;
 
 /* tagging - TAGCOUNT must be no greater than 31 */
 #define TAGCOUNT (10)
@@ -153,14 +154,14 @@ static const Key keys[] = {
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Q,          quit,           {0} },
         
         // moveresize
-	{ MODKEY,                    XKB_KEY_Down,       moveresizekb,   {.v = (int []){ 0, 40, 0, 0 }}},
-	{ MODKEY,                    XKB_KEY_Up,         moveresizekb,   {.v = (int []){ 0, -40, 0, 0 }}},
-	{ MODKEY,                    XKB_KEY_Right,      moveresizekb,   {.v = (int []){ 40, 0, 0, 0 }}},
-	{ MODKEY,                    XKB_KEY_Left,       moveresizekb,   {.v = (int []){ -40, 0, 0, 0 }}},
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Down,       moveresizekb,   {.v = (int []){ 0, 0, 0, 40 }}},
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Up,         moveresizekb,   {.v = (int []){ 0, 0, 0, -40 }}},
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Right,      moveresizekb,   {.v = (int []){ 0, 0, 40, 0 }}},
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Left,       moveresizekb,   {.v = (int []){ 0, 0, -40, 0 }}},
+	{ MODKEY,                    XKB_KEY_Down,       moveresizekb,   {.v = (int []){ 0, mrkb_px, 0, 0 }}},
+	{ MODKEY,                    XKB_KEY_Up,         moveresizekb,   {.v = (int []){ 0, -mrkb_px, 0, 0 }}},
+	{ MODKEY,                    XKB_KEY_Right,      moveresizekb,   {.v = (int []){ mrkb_px, 0, 0, 0 }}},
+	{ MODKEY,                    XKB_KEY_Left,       moveresizekb,   {.v = (int []){ -mrkb_px, 0, 0, 0 }}},
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Down,       moveresizekb,   {.v = (int []){ 0, 0, 0, mrkb_px }}},
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Up,         moveresizekb,   {.v = (int []){ 0, 0, 0, -mrkb_px }}},
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Right,      moveresizekb,   {.v = (int []){ 0, 0, mrkb_px, 0 }}},
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Left,       moveresizekb,   {.v = (int []){ 0, 0, -mrkb_px, 0 }}},
         // shiftview
 	{ MODKEY,                    XKB_KEY_n,          shiftview,      { .i = 1 } },
 	{ MODKEY,                    XKB_KEY_b,          shiftview,      { .i = -1 } },

@@ -2507,9 +2507,12 @@ moveresizekb(const Arg *arg)
 	Client *c = focustop(selmon);
 	Monitor *m = selmon;
 
-	if(!(m && arg && arg->v && c && c->isfloating)) {
-		return;
-	}
+	//if(!(m && arg && arg->v && c && c->isfloating)) {
+	//	return;
+	//}
+        
+        // make it a floater first
+	setfloating(c, 1);
 
 	resize(c, (struct wlr_box){
 		.x = c->geom.x + ((int *)arg->v)[0],
