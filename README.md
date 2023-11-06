@@ -21,7 +21,8 @@ sudo make clean install
 
 -   [alwayscenter](https://github.com/djpohly/dwl/wiki/alwayscenter)
 -   [attachbottom](https://github.com/djpohly/dwl/wiki/attachbottom)
--   [moveresizekb](https://github.com/djpohly/dwl/wiki/moveresizekb) (moveresize)
+- [en-keycodes](https://github.com/djpohly/dwl/wiki/en-keycodes)
+-   [moveresizekb](https://github.com/djpohly/dwl/wiki/moveresizekb) (moveresize, also I've slightly altered the patch)
 -   [movestack](https://github.com/djpohly/dwl/wiki/movestack)
 -   [pertag](https://github.com/djpohly/dwl/wiki/pertag)
 -   [shiftview](https://github.com/djpohly/dwl/wiki/shiftview)
@@ -34,9 +35,11 @@ sudo make clean install
 -   [alwaysontop](https://dwm.suckless.org/patches/alwaysontop/)
 -   [autostart](https://dwm.suckless.org/patches/autostart/)
     - there is an autostart patch for dwl ([here](https://github.com/djpohly/dwl/wiki/autostart)), but it's like the [cool_autostart](https://dwm.suckless.org/patches/cool_autostart/)
+    - update 2: there's no need for this either, you can just -s option `dwl -s $XDG_DATA_HOME/dwm/autostart.sh`
 -   [fixborders](https://dwm.suckless.org/patches/alpha/)
     -   not required, dwl by itself does the transparency
 -   [focusonnetactive](https://dwm.suckless.org/patches/focusonnetactive/)
 -   [systray](https://dwm.suckless.org/patches/systray/)
     -   dwl doesn't come with a bar
 -   [stackmfact](https://dwm.suckless.org/patches/stackmfact/)
+    - I don't really use this option so it's not really even necessary?
