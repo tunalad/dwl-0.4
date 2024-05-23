@@ -12,8 +12,8 @@ dwm for wayland. Trying to achieve the same as with my dwm fork
 ## Installaion
 
 ```
-git clone https://github.com/tunalad/dwl.git
-cd dwl
+git clone https://github.com/tunalad/dwl-0.4.git
+cd dwl-0.4
 sudo make clean install
 ```
 
